@@ -12,8 +12,49 @@
     tools:context="com.droid.anim.dlights.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
+    <TextView android:text="@string/hello_world" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSlider"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+
+        />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarBlink"
+        android:layout_below="@+id/txtSlider"
+        android:layout_margin="10dp"
+        />
+
+    <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="red"
+        android:id="@+id/toggleButtonRed"
+        android:layout_marginTop="20pt"
+        android:layout_below="@+id/seekBarBlink"
+        android:layout_centerVertical="false"
+        android:layout_alignParentLeft="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="green"
+        android:id="@+id/toggleButtonGreen"
+        android:layout_marginTop="5pt"
+        android:layout_centerVertical="false"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toggleButtonRed" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="blue"
+        android:id="@+id/toggleButtonBlue"
+        android:layout_marginTop="5pt"
+        android:layout_below="@+id/toggleButtonGreen"
+        android:layout_centerVertical="false"
+        android:layout_alignParentLeft="true" />
 </RelativeLayout>
